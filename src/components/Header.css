@@ -1,0 +1,119 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background by default */
+    color: white;
+    z-index: 100;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background after scrolling */
+}
+
+/* Logo Styling */
+.header-logo img {
+    height: 55px;
+    width: 55px;
+}
+
+/* Navigation Menu */
+.nav {
+    display: flex; /* Default display for large screens */
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Active Link Styling */
+.nav ul li a.active {
+    color: rgb(241, 197, 115);
+    transform: scale(1.1);
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none; /* Hidden by default (for larger screens) */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    z-index: 1001; /* Ensure it's above the nav */
+    transition: transform 0.3s ease;
+}
+
+/* Responsive Menu for Smaller Screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show menu toggle on smaller screens */
+    }
+
+    .nav {
+        display: none; /* Hide nav by default for smaller screens */
+        flex-direction: column;
+        position: fixed;
+        top: 5px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark background when menu opens */
+        width: 60%;
+        padding: 20px;
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+
+    .nav.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    /* Reduce font size and logo size for very small screens */
+    .header-logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .nav ul li a {
+        font-size: 0.9rem;
+    }
+}

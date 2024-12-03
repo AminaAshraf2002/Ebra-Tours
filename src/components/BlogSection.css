@@ -1,0 +1,121 @@
+/* src/components/BlogSection.css */
+
+.blog-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 30px;
+    text-align: center;
+    color: #4d4d4d;
+}
+
+.blog-section h2 {
+    font-size: 2rem; /* Slightly increase heading size */
+    margin-bottom: 10px;
+    color: black;
+}
+
+.blog-section p {
+    font-size: 1rem;
+    color: #042f5c;
+    margin-bottom: 50px;
+}
+
+.blog-content {
+    display: flex;
+    gap: 40px; /* Increase gap between large and small blog cards */
+}
+
+.large-blog-card {
+    flex: 3; /* Increase size relative to small cards */
+    position: relative;
+    margin-left: 40px; /* Add more space on the left side if desired */
+}
+
+.large-blog-card img {
+    width: 65%;
+    height: 350px; /* Increase height */
+    border-radius: 8px;
+    object-fit: cover;
+    margin-left: -150px;
+}
+
+.large-blog-card .blog-details {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%; /* Directly set width instead of calc */
+    margin-left: 80px;
+    margin-bottom: -120px;
+}
+
+.large-blog-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+   
+    font-weight: bolder;
+
+}
+.blog-details p{
+    font-size: 1.1rem;
+    color: rgb(199, 188, 188);
+    margin-top: 10px;
+    
+}
+.large-blog-card a {
+    color: #042f5c;
+    font-weight:lighter;   
+}
+
+.small-blog-cards {
+    flex: 2; /* Increase size relative to the large card */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Increase spacing between each small blog card */
+    margin-left: -300px;
+}
+
+.small-blog-card {
+    display: flex;
+    gap: 15px; /* Increase gap within each small card */
+    align-items: center;
+    padding: 5px; /* Increase padding inside each card */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+   
+    box-shadow: 0 6px 12px rgba(145, 127, 127, 0.1); /* Increase shadow for better separation */
+}
+
+.small-blog-card img {
+    width: 100px; /* Increase width of small images */
+    height: 120px; /* Increase height of small images */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.small-blog-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.small-blog-details h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.small-blog-details p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.small-blog-details a {
+    color:  #042f5c;
+    text-decoration: none;
+    font-weight:500;
+    margin-top: 5px;
+}

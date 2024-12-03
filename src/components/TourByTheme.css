@@ -1,0 +1,80 @@
+.tour-by-theme-section {
+  text-align: center;
+  padding: 10em;
+  max-width: 1200px;
+  margin-left: 60px;
+  margin-top: -100px;
+  
+}
+.tour-by-theme-section h2 {
+  text-align: left; /* Adjusted to left alignment */
+  font-size: 2rem; /* Matching the font size from the model */
+  font-weight: 600; /* Added for emphasis, like the .main-heading style */
+  margin: 0.5rem 0;
+  margin-bottom: -65px;
+  margin-left: 10px; /* Matching the model's left margin */
+}
+
+.theme-description {
+  font-size: 1rem; /* Updated to match the size from the model */
+  color: #042f5c; /* Updated color to match the .subheading style */
+  font-weight: 400; /* Adjusted font weight to match the model */
+  text-align: left; /* Adjusted to left alignment */
+  margin-left: 10px; /* Aligning with the same left margin as the heading */
+  margin-bottom: 70px; /* Consistent margin-bottom for spacing */
+ 
+}
+.theme-card {
+  position: relative;
+  height: 300px; /* Adjust the height as needed */
+  border-radius: 10px;
+  transition: transform 0.3s;
+  color: white;
+  width: 40%;
+ 
+ 
+}
+
+.theme-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  
+}
+
+.theme-card::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  margin-bottom: -30px;
+  background-color: rgba(0, 0, 0, 0.534); /* Dark transparent overlay */
+  z-index: 2;
+ 
+}
+
+.theme-card h3 {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.5em 1em;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: black; /* Adjust arrow colors */
+ 
+}
+.aos-init {
+  opacity: 1 !important; /* Ensure no visibility issues from AOS */
+}

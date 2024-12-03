@@ -1,0 +1,148 @@
+.popular-destinations {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.popular-header-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -60px;
+   
+}
+
+.popular-header-row p {
+    font-size: 1rem;
+    color:  #042f5c;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0;
+    margin-right: 780px;
+    margin-bottom: -5px;
+}
+
+.popular-header-row h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    margin-right: 700px;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top:-40px ;
+    margin-left: 800px;
+}
+
+.navigation-buttons .prev-button,
+.navigation-buttons .next-button {
+    background-color: #8b5e34;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons .prev-button:hover,
+.navigation-buttons .next-button:hover {
+    background-color: #704729;
+}
+
+.destination-card {
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 270px; /* Decreased width */
+    height: 290px; /* Increased height */
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* To allow the image and content to stack vertically */
+}
+
+.destination-card img {
+    width: 300%; /* Make the image full width */
+    height: 160px; /* Set image height */
+    object-fit: cover; /* Ensure image covers the area */
+    margin: 0; /* Remove any margin */
+    position: absolute; /* Position the image at the top */
+    top: 0; /* Align the image to the top of the card */
+    
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    position: relative;
+}
+
+.card-badge {
+    position: absolute;
+    top: 10px;
+    left: 142px;
+    background: red;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    z-index: 1;
+   
+   
+}
+
+.destination-location-name {
+    font-size: 0.9rem;
+    color: #757575;
+    margin-top: 30px;
+}
+
+.place-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #042f5c;
+    margin: 5px 0;
+    margin-top: -8px;
+}
+
+.ratings {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.ratings span:first-child {
+    margin-right: 5px;
+    color: #f39c12; /* Gold for stars */
+}
+
+.ratings span:last-child {
+    color: #757575;
+}
+
+@media (max-width: 768px) {
+    .destination-card {
+        width: 100%;
+    }
+
+    .navigation-buttons {
+        margin-top: 10px;
+    }
+}
