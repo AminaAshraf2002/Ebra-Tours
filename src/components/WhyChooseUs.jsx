@@ -13,17 +13,14 @@ const WhyChooseUs = () => {
                 <div className="reason">
                     <FontAwesomeIcon icon={faWallet} className="why-icon" />
                     <h3>Affordable Price Guarantee</h3>
-                    <p>Unbeatable Prices for Every Journey You Dream Of.</p>
                 </div>
                 <div className="reason">
                     <FontAwesomeIcon icon={faGlobe} className="why-icon" />
                     <h3>Wide Variety of Destinations</h3>
-                    <p>Discover Endless Destinations to Satisfy Your Wanderlust.</p>
                 </div>
                 <div className="reason">
                     <FontAwesomeIcon icon={faThumbsUp} className="why-icon" />
                     <h3>Highly Qualified Service</h3>
-                    <p>Experience Exceptional Services for Memorable Adventures.</p>
                 </div>
             </div>
         </div>

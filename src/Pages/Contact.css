@@ -32,7 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  text-align: center; /* Center-align text */
+  text-align: center;
   padding: 20px;
 }
 
@@ -94,61 +94,46 @@ body {
 .map-and-form {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
+  align-items: center;
+  gap: 60px;
   padding: 20px 40px;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .map-container {
-  width: 48%; /* Slightly reduced width for better spacing */
-  max-width: 600px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px; /* Adds spacing between form and map on small screens */
 }
 
 .form-container {
-  width: 48%;
-  max-width: 450px;
+  width: 100%;
+  max-width: 500px;
   background: white;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-height: 420px;
-}
-
-.form-container h3 {
-  text-align: center;
-  margin-bottom: 15px;
-  color: rgb(29, 61, 73);
+  max-height: 400px;
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .contact-header .overlay h1 {
-    font-size: 2rem; /* Adjust heading for tablets */
-  }
-
-  .contact-header .overlay p {
-    font-size: 1rem;
-  }
-
-  .map-container,
-  .form-container {
-    width: 100%;
-  }
-}
-
 @media (max-width: 768px) {
   .map-and-form {
-    flex-direction: column; /* Stack map and form vertically */
+    flex-direction: column; /* Stacks map and form vertically */
     align-items: center;
   }
 
   .map-container,
   .form-container {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 100%;
+    width: 90%; /* Adjust width for smaller screens */
   }
-
+  .map-container{
+    margin-right: -200px;
+  }
+  .form-container{
+    margin-left: -200px;
+  }
   .contact-header .overlay h1 {
     font-size: 1.8rem;
   }
@@ -164,17 +149,28 @@ body {
 }
 
 @media (max-width: 480px) {
+  .map-and-form {
+    gap: 25px; /* Reduce gap for smaller screens */
+  }
+  .map-container{
+    margin-right: -200px;
+  }
+  .form-container{
+    margin-left: -200px;
+  }
+  .map-container,
+  .form-container {
+    width: 100%; /* Full width on mobile */
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+
   .contact-header .overlay h1 {
     font-size: 1.5rem;
   }
 
   .contact-header .overlay p {
     font-size: 0.85rem;
-  }
-
-  .map-container,
-  .form-container {
-    width: 100%; /* Full width on mobile */
   }
 
   .info-card {
@@ -186,7 +182,7 @@ body {
 .contact-form .form-group {
   position: relative;
   margin-bottom: 20px;
-  margin-left: 50px;
+  
 }
 
 .contact-form .form-group .form-icon {
@@ -195,7 +191,6 @@ body {
   left: 10px;
   font-size: 18px;
   color: rgb(29, 61, 73);
-  
 }
 
 .contact-form .form-group input,
@@ -221,21 +216,18 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: -25px;
-  margin-left: 150px;
 }
 
 .contact-form button:hover {
   background-color: rgb(2, 2, 43);
 }
 
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .contact-form .form-group input,
   .contact-form textarea {
     font-size: 14px;
     padding: 8px 8px 8px 30px;
-   
   }
 
   .contact-form button {
@@ -249,8 +241,6 @@ body {
   .contact-form textarea {
     font-size: 12px;
     padding: 6px 6px 6px 28px;
-   
-   
   }
 
   .contact-form button {
