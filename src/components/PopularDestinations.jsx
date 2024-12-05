@@ -1,4 +1,3 @@
-// src/components/PopularDestinations.js
 import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -51,18 +50,16 @@ const PopularDestinations = () => {
                     prevEl: '.prev-button',
                 }}
                 spaceBetween={20}
-                slidesPerView={4}
                 breakpoints={{
-                    640: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                    1200: { slidesPerView: 4 },
+                    640: { slidesPerView: 2 }, // Phone: Show 2 cards
+                    768: { slidesPerView: 3 }, // Tablet: Show 3 cards
+                    1024: { slidesPerView: 4 }, // Big screen: Show 4 cards
                 }}
             >
                 {destinations.map((destination, index) => (
                     <SwiperSlide key={index}>
                         <div className="destination-card">
-                            <div className="image-container">
+                            <div className="card-image-container">
                                 <img
                                     className="destination-image"
                                     src={destination.image}

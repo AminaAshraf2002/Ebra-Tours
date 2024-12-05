@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Header.css';
@@ -8,7 +8,6 @@ import logo from '../assets/ebraholidays.png';
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,6 +26,10 @@ const Header = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <header className={`header ${scrolled ? 'scrolled' : ''}`} data-aos="fade-down">
             <div className="header-logo">
@@ -42,19 +45,19 @@ const Header = () => {
             <nav className={`nav ${menuOpen ? 'active' : ''}`}>
                 <ul>
                     <li>
-                        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+                        <Link to="/" onClick={closeMenu}>Home</Link>
                     </li>
                     <li>
-                        <Link to="/packages" onClick={() => setMenuOpen(false)}>Packages</Link>
+                        <Link to="/packages" onClick={closeMenu}>Packages</Link>
                     </li>
                     <li>
-                        <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
+                        <Link to="/blog" onClick={closeMenu}>Blog</Link>
                     </li>
                     <li>
-                        <Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link>
+                        <Link to="/about" onClick={closeMenu}>About Us</Link>
                     </li>
                     <li>
-                        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+                        <Link to="/contact" onClick={closeMenu}>Contact Us</Link>
                     </li>
                 </ul>
             </nav>

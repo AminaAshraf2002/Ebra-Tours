@@ -5,8 +5,8 @@ import 'aos/dist/aos.css';
 import './BlogSection.css';
 
 // Import images
-import italyImage from '../assets/parallax1.jpeg';
-import Image from '../assets/des1.jpeg';
+import Image from '../assets/parallax1.jpeg';
+import italyImage from '../assets/des1.jpeg';
 import indonesiaImage from '../assets/ella.jpg';
 import desertIslandImage from '../assets/blog3.jpg';
 
@@ -25,8 +25,8 @@ const BlogSection = () => {
             image: italyImage,
         },
         {
-            title: "Romantic moments under Eiffel Tower",
-            description: "The Eiffel Tower is the best background for a romantic Paris honeymoon portrait.",
+            title: " Lakshadweep: Paradise Awaits",
+            description: "Crystal-clear waters and peaceful beaches—Lakshadweep is a true tropical escape!",
             image: Image,
         },
         {
@@ -47,7 +47,7 @@ const BlogSection = () => {
             <p>An insight to the incredible experiences in the world</p>
             <div className="blog-content">
                 <div className="large-blog-card" data-aos="fade-right">
-                    <img src={blogs[1].image} alt={blogs[0].title} />
+                    <img src={blogs[0].image} alt={blogs[0].title} />
                     <div className="blog-details">
                         <h3>{blogs[0].title}</h3>
                         <p>{blogs[0].description}</p>
@@ -59,7 +59,7 @@ const BlogSection = () => {
                             <img src={blog.image} alt={blog.title} />
                             <div className="small-blog-details">
                                 <h3>{blog.title}</h3>
-                                <p>{blog.description}</p> {/* Add description paragraph */}
+                                <p>{blog.description}</p>
                                 <a href="/blog">Read More &gt;</a>
                             </div>
                         </div>

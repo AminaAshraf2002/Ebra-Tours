@@ -95,8 +95,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
-  padding: 40px 20px;
+  gap: 30px;
+  padding: 20px 40px;
   flex-wrap: wrap;
 }
 
@@ -112,11 +112,12 @@ body {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 420px;
 }
 
 .form-container h3 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: rgb(29, 61, 73);
 }
 
@@ -215,11 +216,13 @@ body {
   background: rgb(29, 61, 73);
   color: white;
   border: none;
-  padding: 12px 16px;
-  font-size: 16px;
+  padding: 8px 12px;
+  font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: -25px;
+  margin-left: 150px;
 }
 
 .contact-form button:hover {
@@ -232,6 +235,7 @@ body {
   .contact-form textarea {
     font-size: 14px;
     padding: 8px 8px 8px 30px;
+   
   }
 
   .contact-form button {
@@ -245,6 +249,7 @@ body {
   .contact-form textarea {
     font-size: 12px;
     padding: 6px 6px 6px 28px;
+   
    
   }
 

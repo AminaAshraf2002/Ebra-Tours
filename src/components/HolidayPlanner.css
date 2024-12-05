@@ -1,64 +1,57 @@
 .holiday-planner {
     text-align: center;
-    padding: 8rem;
+    padding: 4rem; /* Adjusted for responsiveness */
     font-family: 'Poppins', sans-serif;
     color: #333;
-    background-image: url('https://img.freepik.com/free-photo/woman-tourist-full-length-happy-young-woman-standing-with-suitcase-with-exciting-gesturing-isolated_1258-111606.jpg?t=st=1731967137~exp=1731970737~hmac=e644ec615372172b7a987abfb3328f69ed8beab061abc889664463db81ce0d90&w=996');
-    background-size: cover;
+    background-image: url('https://img.freepik.com/free-photo/woman-tourist-full-length-happy-young-woman-standing-with-suitcase-with-exciting-gesturing-isolated_1258-111606.jpg');
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
+/* Title Section */
 .title-section {
-    margin-top: -100px;
+    margin-top: -50px;
     text-align: left;
-    margin-left: 1rem; /* Adjusted for mobile screens */
+    padding: 1rem;
 }
 
 .subheading {
     color: #042f5c;
     font-size: 1rem;
     font-weight: 400;
-    margin-left: 0;
+    margin-left: 80px;
 }
 
 .main-heading {
-    font-size: 1.5rem; /* Reduced font size for smaller screens */
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 0.5rem 0;
-    margin-bottom: 50px;
-    margin-left: 0; /* Adjusted for mobile screens */
+    margin-left: 80px
 }
 
+/* Tour List Section */
 .tour-list {
     display: flex;
-    flex-wrap: wrap; /* Wrap elements to stack in smaller screens */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    margin-left: 0; /* Adjusted for mobile screens */
+    margin-top: 2rem;
 }
 
-.tour-card {
-    width: 100%; /* Full width on small screens */
-    text-align: center;
-    color: #333;
-    max-width: 150px; /* Limiting maximum width */
-    margin-bottom: 2rem; /* Add some space between rows */
-}
 
+/* Image Container */
 .image-container {
-    width: 100px; /* Adjusted width for small screens */
-    height: 120px; /* Adjusted height */
+    width: 100px;
+    height: 120px;
     background-color: #f9f9f9;
     border-radius: 40%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     margin: 0 auto 0.5rem auto;
-    font-size: 2rem;
-    color: #042f5c;
     position: relative;
+    overflow: hidden;
 }
 
 .tour-image {
@@ -70,6 +63,7 @@
     border-radius: 45%;
 }
 
+/* Icon Container */
 .icon-container {
     position: absolute;
     bottom: -10px;
@@ -86,44 +80,97 @@
     color: #042f5c;
 }
 
+/* Tour Title & Details */
 .tour-title {
     font-size: 1rem;
     font-weight: 600;
     margin: 0.5rem 0;
+   
 }
 
 .tour-details {
     font-size: 0.85rem;
     color: #042f5c;
     font-weight: 500;
-    margin-bottom: -90px;
+    margin-bottom: 0;
 }
 
-/* Media Queries for smaller screens */
-@media screen and (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 768px) {
     .holiday-planner {
-        padding: 4rem 1rem;
+        padding: 2rem;
+    }
+
+    .title-section {
+        margin-top: -20px;
+        text-align: center;
     }
 
     .main-heading {
-        font-size: 1.5rem; /* Adjusted font size */
+        font-size: 1.25rem;
+    }
+
+    .subheading {
+        font-size: 0.9rem;
     }
 
     .tour-list {
-        flex-direction: column; /* Stack cards vertically for mobile screens */
+        gap: 1rem;
     }
 
     .tour-card {
-        width: 100%;
-        max-width: 100%; /* Ensure full width on mobile */
+        max-width: 200px;
     }
 
     .image-container {
-        width: 100px; /* Adjust size for smaller devices */
-        height: 120px;
+        width: 80px;
+        height: 100px;
+    }
+
+    .icon-container {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
     }
 
     .tour-title {
+        font-size: 0.9rem;
+    }
+
+    .tour-details {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .holiday-planner {
+        padding: 1.5rem;
+    }
+
+    .main-heading {
         font-size: 1rem;
+    }
+
+    .tour-card {
+        max-width: 150px;
+    }
+
+    .image-container {
+        width: 70px;
+        height: 90px;
+    }
+
+    .icon-container {
+        width: 25px;
+        height: 25px;
+        font-size: 0.9rem;
+    }
+
+    .tour-title {
+        font-size: 0.8rem;
+    }
+
+    .tour-details {
+        font-size: 0.75rem;
     }
 }

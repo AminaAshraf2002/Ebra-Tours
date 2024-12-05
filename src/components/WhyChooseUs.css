@@ -55,7 +55,7 @@
 /* Specific styling for the icons in this section */
 .why-icon {
     font-size: 2.5rem;
-    color:  #2dddc69d; /* Example color for icons */
+    color:  rgba(255, 255, 0, 0.849); /* Example color for icons */
     margin-bottom: 15px;
 }
 
@@ -67,4 +67,107 @@
 .reason p {
     font-size: 0.9rem;
     line-height: 1.5;
+}
+@media (max-width: 767px) {
+    .why-choose-us {
+        background-attachment: scroll; /* Parallax effect doesn't work well with mobile devices, so we disable it */
+    }
+  
+    .why-choose-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .why-choose-us p {
+        font-size: 1rem;
+    }
+
+    .reasons {
+        justify-content: center;
+    }
+
+    .reason {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .why-icon {
+        font-size: 2rem;
+    }
+
+    .reason h3 {
+        font-size: 1rem;
+    }
+
+    .reason p {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 1024px) {
+    .why-choose-us {
+        padding: 40px 15px;
+    }
+
+    .why-choose-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .why-choose-us p {
+        font-size: 1rem;
+    }
+
+    .reasons {
+        justify-content: center;
+    }
+
+    .reason {
+        max-width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .why-icon {
+        font-size: 2.3rem;
+    }
+
+    .reason h3 {
+        font-size: 1.1rem;
+    }
+
+    .reason p {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 1025px) {
+    .why-choose-us {
+        background-attachment: fixed; /* Parallax effect is maintained here */
+        padding: 60px 20px;
+    }
+
+    .why-choose-us h2 {
+        font-size: 2rem;
+    }
+
+    .why-choose-us p {
+        font-size: 1.1rem;
+    }
+
+    .reasons {
+        justify-content: space-around;
+    }
+
+    .reason {
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .why-icon {
+        font-size: 2.5rem;
+    }
+
+    .reason h3 {
+        font-size: 1.2rem;
+    }
+
+    .reason p {
+        font-size: 0.9rem;
+    }
 }

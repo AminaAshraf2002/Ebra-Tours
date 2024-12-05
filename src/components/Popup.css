@@ -172,3 +172,53 @@
         transform: scale(1);
     }
 }
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .popup-container {
+        flex-direction: column; /* Stack sections vertically */
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust */
+        max-height: 90%; /* Avoid overflow */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .popup-right {
+        display: none; /* Hide the right section on smaller screens */
+    }
+
+    .popup-left {
+        padding: 10px; /* Adjust padding for better spacing */
+    }
+
+    .popup-left form input[type="text"],
+    .popup-left form input[type="email"],
+    .popup-left form button {
+        width: 100%; /* Make inputs and buttons responsive */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popup-container {
+        width: 95%; /* Further adjust width for extra small screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .popup-left h3 {
+        font-size: 1rem; /* Smaller heading font size */
+    }
+
+    .popup-left ul li {
+        font-size: 0.8rem; /* Adjust font size */
+    }
+
+    .popup-left form input[type="text"],
+    .popup-left form input[type="email"] {
+        font-size: 0.7rem; /* Reduce font size for inputs */
+        padding: 6px; /* Adjust padding for inputs */
+    }
+
+    .popup-left form button {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 8px; /* Adjust button padding */
+    }
+}

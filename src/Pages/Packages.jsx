@@ -30,7 +30,7 @@ const Packages = () => {
       name: "Bali",
       price: "$500 / 3 days",
       images: [
-        "https://comeamaviaja.com/wp-content/uploads/2024/08/donde-alojarse-nusa-penida.webp",
+        "https://shewandersabroad.com/wp-content/uploads/2019/05/Rumah-Pohon-Tree-House-Nusa-Penida-1.jpg",
         "https://media2.thrillophilia.com/images/photos/000/084/783/original/1556011667_shutterstock_631736717.jpg?width=975&height=600",
         "https://media2.thrillophilia.com/images/photos/000/163/984/original/1625578378_swing.jpg?w=753&h=450&dpr=1.5",
       ],

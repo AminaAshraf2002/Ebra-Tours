@@ -1,41 +1,119 @@
+/* Container Styles */
 .popular-destinations {
     text-align: center;
     padding: 40px 20px;
     margin: 0 auto;
+    max-width: 1200px; /* Center content with max width */
+    margin-top: -10px;
 }
 
+/* Header Styles */
 .popular-header-row {
     display: flex;
     flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
     gap: 10px;
-    margin-top: -60px;
-   
+    margin-bottom: 20px;
 }
 
+/* Paragraph in the Header */
 .popular-header-row p {
     font-size: 1rem;
-    color:  #042f5c;
+    color: #042f5c;
     line-height: 1.4;
-    text-align: center;
     margin: 0;
-    margin-right: 780px;
-    margin-bottom: -5px;
+    max-width: 100%; /* Prevents overflow */
 }
 
+/* Heading in the Header */
 .popular-header-row h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: #000;
     margin: 0;
-    margin-right: 700px;
+    max-width: 100%; /* Prevents overflow */
 }
 
+/* Responsive Adjustments for Mobile */
+@media (max-width: 600px) {
+    /* Mobile screen styles */
+    .popular-header-row {
+        align-items: center; /* Center align for smaller screens */
+        text-align: center;
+    }
+
+    .popular-header-row p,
+    .popular-header-row h2 {
+        margin-right: 0; /* Remove fixed margin on smaller screens */
+    }
+
+    .popular-header-row p {
+        font-size: 0.9rem; /* Slightly smaller text for mobile */
+    }
+
+    .popular-header-row h2 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+    }
+}
+
+/* Responsive Adjustments for Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Tablet screen styles */
+    .popular-header-row {
+        align-items: flex-start; /* Align content to the left for tablets */
+        text-align: left; /* Left align text */
+    }
+
+    .popular-header-row p {
+        font-size: 1rem; /* Normal size for paragraph on tablet */
+    }
+
+    .popular-header-row h2 {
+        font-size: 1.8rem; /* Slightly smaller heading for tablets */
+    }
+}
+
+/* Responsive Adjustments for Laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Laptop screen styles */
+    .popular-header-row {
+        align-items: flex-start; /* Align content to the left for laptops */
+        text-align: left; /* Left align text */
+    }
+
+    .popular-header-row p {
+        font-size: 1rem; /* Normal paragraph size for laptops */
+    }
+
+    .popular-header-row h2 {
+        font-size: 2rem; /* Heading size for laptops */
+    }
+}
+
+/* Responsive Adjustments for Large Screens (Desktop) */
+@media (min-width: 1441px) {
+    /* Desktop screen styles */
+    .popular-header-row {
+        align-items: flex-start; /* Align content to the left for desktops */
+        text-align: left; /* Left align text */
+    }
+
+    .popular-header-row p {
+        font-size: 1rem; /* Paragraph size for desktop */
+    }
+
+    .popular-header-row h2 {
+        font-size: 2.2rem; /* Larger heading for desktop */
+    }
+}
+/* Navigation Buttons */
 .navigation-buttons {
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top:-40px ;
-    margin-left: 800px;
+    
+    margin-left: 980px;
+    
 }
 
 .navigation-buttons .prev-button,
@@ -59,28 +137,18 @@
     background-color: #704729;
 }
 
+/* Card Styles */
 .destination-card {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 270px; /* Decreased width */
-    height: 290px; /* Increased height */
-    margin: 0 auto;
-    margin-top: 50px;
+    width: 90%;
+    height: 280px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 120px;
     position: relative;
+    background: white;
+    margin-bottom: 100px;
     display: flex;
-    flex-direction: column; /* To allow the image and content to stack vertically */
-}
-
-.destination-card img {
-    width: 300%; /* Make the image full width */
-    height: 160px; /* Set image height */
-    object-fit: cover; /* Ensure image covers the area */
-    margin: 0; /* Remove any margin */
-    position: absolute; /* Position the image at the top */
-    top: 0; /* Align the image to the top of the card */
-    
+    flex-direction: column;
 }
 
 .destination-card:hover {
@@ -88,14 +156,22 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.image-container {
+/* Image Styles */
+.card-image-container {
     position: relative;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    
 }
 
 .card-badge {
     position: absolute;
     top: 10px;
-    left: 142px;
+    right: 10px;
     background: red;
     color: white;
     font-size: 0.8rem;
@@ -103,15 +179,15 @@
     padding: 5px 10px;
     border-radius: 5px;
     text-transform: uppercase;
-    z-index: 1;
-   
-   
+    margin-right: -20px;
 }
 
+/* Content Styles */
 .destination-location-name {
     font-size: 0.9rem;
     color: #757575;
-    margin-top: 30px;
+    margin: 10px 0 0;
+    text-align: center;
 }
 
 .place-name {
@@ -119,13 +195,14 @@
     font-weight: bold;
     color: #042f5c;
     margin: 5px 0;
-    margin-top: -8px;
+    text-align: center;
 }
 
 .ratings {
     font-size: 0.9rem;
     color: #555;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    text-align: center;
 }
 
 .ratings span:first-child {
@@ -137,12 +214,35 @@
     color: #757575;
 }
 
-@media (max-width: 768px) {
-    .destination-card {
-        width: 100%;
-    }
+/* Responsive Breakpoints */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
 
-    .navigation-buttons {
-        margin-top: 10px;
+/* 2 cards per row for small screens (phones) */
+@media (max-width: 640px) {
+    .swiper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* 3 cards per row for tablets */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .swiper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+/* 4 cards per row for large screens */
+@media (min-width: 1025px) {
+    .swiper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 }

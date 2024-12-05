@@ -3,9 +3,9 @@ import "./OfferZone.css";
 import offer1 from "../assets/image1.jpg";
 import offer2 from "../assets/image2.jpg";
 import offer3 from "../assets/img1.jpeg";
-import offer4 from "../assets/offer4.jpeg";
-import offer5 from "../assets/offer0.jpeg";
-import offer6 from "../assets/offer6.jpeg";
+import offer4 from "../assets/family.jpeg";
+import offer5 from "../assets/Romantic Stays.jpeg";
+import offer6 from "../assets/solo.jpeg";
 import Popup from "./Popup";
 const offers = [
   { id: 1, image: offer1, discount: "50% Off", title: "Luxury Escapes", description: "Half the price on selected items." },
