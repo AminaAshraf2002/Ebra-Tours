@@ -32,18 +32,19 @@ const ContactPage = () => {
 
             {/* Contact Information Row */}
             <section className="contact-info-section">
-                <div className="info-card" data-aos="fade-up">
-                    <FaMapMarkerAlt className="info-icon" />
-                    <h3>Our Address</h3>
-                    <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
-                        123 Main Street, City, Country
-                    </a>
-                </div>
                 <div className="info-card" data-aos="fade-up" data-aos-delay="200">
                     <FaPhoneAlt className="info-icon" />
                     <h3>Phone Number</h3>
-                    <a href="tel:+1234567890">+123-456-7890</a>
+                    <a href="tel:9497080904">9497080904</a>
                 </div>
+                <div className="info-card" data-aos="fade-up">
+                    <FaMapMarkerAlt className="info-icon" />
+                    <h3>Our Address</h3>
+                    <a href="https://maps.app.goo.gl/m1CgGaMtLpzMdKgh8" target="_blank" rel="noopener noreferrer">
+                        Changanassery road, near passport seva Kendra, Eerayil Kadavu, Kottayam, Kerala 686001
+                    </a>
+                </div>
+
                 <div className="info-card" data-aos="fade-up" data-aos-delay="400">
                     <FaEnvelope className="info-icon" />
                     <h3>Email Address</h3>
@@ -57,7 +58,7 @@ const ContactPage = () => {
                 <div className="map-container" data-aos="fade-right">
                     <iframe
                         title="Google Map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093744!2d144.955923315318!3d-37.81720997975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577a92f63c9cd0!2z5p2l6ZmQ6ZC16Zm96YeM6YCa6YCa6bq754mb!5e0!3m2!1sen!2sin!4v1633659332693!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.1505207004893!2d76.5236644!3d9.5822909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b062b003cac1191%3A0xe3e19955d1c92341!2sKee%20ads%20advertising%20company%20kottayam!5e0!3m2!1sen!2sin!4v1733561464234!5m2!1sen!2sin"
                         width="100%"
                         height="400"
                         style={{ border: "0" }}

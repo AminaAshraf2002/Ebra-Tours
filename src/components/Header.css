@@ -21,8 +21,10 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    z-index: 100;
+    z-index: 10;
     transition: background-color 0.3s ease-in-out;
+    margin-top: -10px;
+  
 }
 
 .header.scrolled {
@@ -102,5 +104,31 @@ body {
 
     .nav ul li a {
         font-size: 1rem;
+    }
+}
+.enquiry-btn {
+    background-color: #f77f00; /* Bright orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem; /* Space between the button and the nav items */
+    align-self: center; /* Center the button for small screens */
+    margin-bottom: 30px;
+}
+
+.enquiry-btn:hover {
+    background-color: #e47100; /* Darker orange */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Adjust button placement for small screens */
+@media (max-width: 768px) {
+    .enquiry-btn {
+        width: 100%; /* Full width button for better touch interaction */
     }
 }

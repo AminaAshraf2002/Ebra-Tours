@@ -2,7 +2,7 @@
 .carousel img {
     width: 100%;
     height: auto;
-    max-height: 500px;
+    max-height: 550px;
     object-fit: fill;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .carousel-content h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: bold;
     margin: 0 0 10px;
 }

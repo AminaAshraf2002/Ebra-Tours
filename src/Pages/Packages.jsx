@@ -11,16 +11,15 @@ const Packages = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  const [isPopupOpen, setIsPopupOpen] = useState(false); // Popup state
+  const [popupVisible, setPopupVisible] = useState(false); // State to handle popup visibility
 
   const handleEnquiryClick = () => {
-    setIsPopupOpen(true); // Open the popup when the button is clicked
+    setPopupVisible(true); // Show the popup when "Enquiry Now" is clicked
   };
 
   const closePopup = () => {
-    setIsPopupOpen(false); // Close the popup
+    setPopupVisible(false); // Close the popup when the close button is clicked
   };
-
   const heroImage =
     "https://burst.shopifycdn.com/photos/calm-water-in-european-city.jpg?width=1000&format=pjpg&exif=0&iptc=0"; // Replace with your actual hero image URL
 
@@ -91,9 +90,9 @@ const Packages = () => {
     <div>
       {/* Hero Section */}
       <div data-aos="fade-down"
-      className="hero-section"
+        className="hero-section"
         style={{
-          backgroundImage:` url(${heroImage})`,
+          backgroundImage: ` url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "400px",
@@ -105,7 +104,7 @@ const Packages = () => {
         <h1 data-aos="fade-down" className="hero-title" >
           Travel Packages
         </h1>
-        
+
       </div>
 
       {/* Packages Section */}
@@ -149,7 +148,7 @@ const Packages = () => {
       </div>
 
       {/* Show Popup when isPopupOpen is true */}
-      {isPopupOpen && <Popup closePopup={closePopup} />}
+      {popupVisible && <Popup onClose={closePopup} />}
     </div>
   );
 };

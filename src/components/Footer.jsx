@@ -36,7 +36,13 @@ const Footer = () => {
               >
                 <i className="fas fa-map-marker-alt"></i>
               </span>
-              Kottayam
+              <a
+                href="https://www.google.com/maps/search/Changanassery+road,+near+passport+seva+Kendra,+Eerayil+Kadavu,+Kottayam,+Kerala+686001"
+                target="_blank"
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
+                Changanassery Road, Near Passport Seva Kendra, Eerayil Kadavu, Kottayam, Kerala 686001
+              </a>
             </p>
           </div>
 
@@ -137,7 +143,9 @@ const Footer = () => {
                 </span>
                 <div>
                   <h4 style={{ margin: 0, fontSize: "16px" }}>Book Your Holiday</h4>
-                  <p style={{ margin: 0 }}>012-345-6789</p>
+                  <a href="tel:+910123456789" style={{ color: "#fff", textDecoration: "none" }}>
+                    <p style={{ margin: 0 }}>9497080904</p>
+                  </a>
                 </div>
               </div>
 
@@ -170,7 +178,7 @@ const Footer = () => {
           <div style={{ textAlign: "center" }}>
             <p>Follow us:</p>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61569417806592"
               target="_blank"
               style={{ color: "#fff", marginRight: "15px", fontSize: "20px" }}
             >
@@ -189,6 +197,14 @@ const Footer = () => {
               style={{ color: "#fff", fontSize: "20px" }}
             >
               <i className="fab fa-youtube"></i>
+            </a>
+            {/* WhatsApp Link */}
+            <a
+              href="https://wa.me/9497080904"
+              target="_blank"
+              style={{ color: "#fff", fontSize: "20px", marginLeft: "15px" }}
+            >
+              <i className="fab fa-whatsapp"></i>
             </a>
           </div>
         </div>
